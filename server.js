@@ -14,6 +14,10 @@ const transporter = nodemailer.createTransport({
   }
 });
 
+app.get('/status', async (req,res)=>{
+    res.status(200).json({success: true, message: 'Service is live'});
+})
+
 app.get('/send-email', async (req, res) => {
   let { wallet_address, tokenId } = req.query;
 
