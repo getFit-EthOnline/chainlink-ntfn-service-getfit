@@ -26,7 +26,7 @@ app.get('/send-email', async (req, res) => {
       if (!wallet_address.startsWith('0x')) {
           wallet_address = '0x' + wallet_address;
       }
-      const userInfoUrl = `https://db-graph-backend.onrender.com/api/user-model-info?wallet_address=${wallet_address}&tokenId=${tokenId}`;
+      const userInfoUrl = `https://onlytease-db-graph-backend.onrender.com/api/user-model-info?wallet_address=${wallet_address}&tokenId=${tokenId}`;
       const userInfoResponse = await axios.get(userInfoUrl);
       const { user, model } = userInfoResponse.data.data;
 
