@@ -44,7 +44,7 @@ app.get('/send-email', async (req, res) => {
               <h1 style="color: blue;">Hi ${user.username},</h1>
               <p>🌟 <strong>Oh no! It looks like your magical journey with ${model.name} has paused.</strong> But don't worry, just a quick tap away and you can dive right back into the excitement!</p>
               <p>We've missed you and so has ${model.name}. Your exclusive access is just on hold and waiting for you to hit 'resume'. Let's not keep the thrills waiting, shall we?</p>
-              <p><a href="https://only-tease-frontend.vercel.app/profile/${modelSlug}" style="color: #ffffff; background-color: #007bff; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Recharge Now & Resume the Fun!</a></p>
+              <p><a href="https://onlytease.vercel.app/profile/${modelSlug}" style="color: #ffffff; background-color: #007bff; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Recharge Now & Resume the Fun!</a></p>
               <img src="${image}" alt="${model.name} awaits you!" style="width: 100%; max-width: 300px; height: auto; display: block; margin: auto;" />
               <p>Don't let the adventure stop. <strong>${model.name}</strong> has more surprises in store, and we promise, they're too good to miss!</p>
               <p>Cheers to more unforgettable experiences,<br>The onlyTease Team 🥂</p>
